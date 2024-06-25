@@ -1,8 +1,7 @@
+# Gen code by chatgpt
+# Refer to IEEE 802.1AE Table C-9
 from Crypto.Cipher import AES
-from Crypto.Random import get_random_bytes
-from Crypto.Util.Padding import pad, unpad
 from Crypto.Util.strxor import strxor
-import binascii
 
 def gf_mult(x, y):
     R = 0xe1 << 120
